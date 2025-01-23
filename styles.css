@@ -4,13 +4,14 @@ body {
 
 .card {
     width: 500px;
-    background-color: lightgray;
+    background-color: rgb(224, 219, 219);
     border: 1px solid darkgrey;
     margin: 10px;
 }
 
 .innerCard {
-padding: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .header {
@@ -19,11 +20,12 @@ padding: 10px;
     font-size: x-large;
     padding: 1% 0;
     user-select: none;
+    border: 1px solid rgb(95, 94, 94) ;
 
 }
 
 .green {
-    background-color: rgb(68, 228, 68);
+    background-color: rgb(26, 172, 26);
 }
 
 .yellow {
