@@ -1,61 +1,43 @@
-div.button{
-    margin: 20px;
- }
- div.lightgrey{
-     background-color: lightgrey;
-     border: solid 1px;
-     width: 350px;
-     margin: 50px;
-     
- }
- div.grey{
-     background-color: rgb(20, 20, 20);
-     color: rgb(255, 255, 255);
-     padding: 20px;
-     border: solid 4px rgb(77, 77, 77);
-     margin: 20px;
-     text-align: center;
-     font-size: xx-large;
-     width: 350px;
- 
- }
- div.red{
-     background-color: red;
-     color: rgb(255, 255, 255);
-     padding: 20px;
-     border: solid 4px rgb(77, 77, 77);
-     margin: 20px;
-     text-align: center;
-     font-size: xx-large;
-     width: 350px;
- }
- div.green{
-     background-color: green;
-     color: rgb(255, 255, 255);
-     padding: 20px;
-     border: solid 4px rgb(77, 77, 77);
-     margin: 20px;
-     text-align: center;
-     font-size: xx-large;
-     width: 350px;
- }
- div.blue{
-     background-color: blue;
-     color: rgb(255, 255, 255);
-     padding: 20px;
-     border: solid 4px rgb(77, 77, 77);
-     margin: 20px;
-     text-align: center;
-     font-size: xx-large;
-     width: 350px;
- }
- div.yellow{
-     background-color: rgb(248, 213, 11);
-     color:rgb(255, 255, 255);
-     padding: 20px;
-     border: solid 4px rgb(77, 77, 77);
-     margin: 20px;
-     text-align: center;
-     font-size: xx-large;
-     width: 350px;
- }
+body {
+    margin-left: 20px;
+}
+
+.card {
+    width: 500px;
+    background-color: lightgray;
+    border: 1px solid darkgrey;
+    margin: 10px;
+}
+
+.innerCard {
+padding: 10px;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 1% 0;
+    user-select: none;
+
+}
+
+.green {
+    background-color: rgb(68, 228, 68);
+}
+
+.yellow {
+    background-color: #f4c20d;
+}
+
+.red {
+    background-color: rgb(245, 58, 58);
+}
+
+.blue{
+    background-color: rgb(52, 52, 255);
+}
+
+.dark {
+    background-color: rgb(34, 33, 33);
+}
