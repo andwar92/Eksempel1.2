@@ -1,35 +1,35 @@
 function blankAll(){
-    getElementById=('tools')
+    getElementById=('Tools')
     getElementById=('Html')
     getElementById=('Css')
-    getElementById=('JavaScript')
+    getElementById=('JS')
 }
 
 
 
 function showTools(){
-    document.getElementById('Tools').innerHTML=`
-            De to viktigste verktøyene vi skal bruke er disse:
-        <ul>
-            <li>
-                Koderedigeringsprogrammet
-                <a href="https://code.visualstudio.com/">
-                    Visual Studio Code</a>
-                <br />
-                Vi skal bruke noen <i>extensions:</i>
+document.getElementById('Tools').innerHTML=`
+                De to viktigste verktøyene vi skal bruke er disse:
                 <ul>
-                    <li>JavaScript-booster</li>
-                    <li>es6-string-html</li>
-                    <li>live-server</li>
-                    <li>live-share</li>
-                </ul>
-            </li>
-            <li>Nettleseren
-                <a href="https://www.google.com/intl/no/chrome/">Google Chrome</a>
-            </li>
-        </ul>   
-    `;
+                    <li>
+                        Koderedigeringsprogrammet
+                        <a href="https://code.visualstudio.com/">
+                            Visual Studio Code</a>
+                        <br />
+                        Vi skal bruke noen <i>extensions:</i>
+                        <ul>
+                            <li>JavaScript-booster</li>
+                            <li>es6-string-html</li>
+                            <li>live-server</li>
+                            <li>live-share</li>
+                        </ul>
+                    </li>
+                    <li>Nettleseren
+                        <a href="https://www.google.com/intl/no/chrome/">Google Chrome</a>
+                    </li>
+                </ul> `;
 }
+
 
 function showHtml(){
     document.getElementById('Html').innerHTML=`
@@ -69,15 +69,14 @@ function showCss(){
     `;
 }
 function showJavaScript(){
-    document.getElementById('JavaScript').innerHTML=`
-            Det viktigste vi skal lære er programmeringsspråket JavaScript. Vi skal lære grunnleggende programmering
-        ved
-        å manipulere HTML- og CSS-kode på en nettside ved hjelp av JavaScript.
+    document.getElementById('JS').innerHTML=`
         <ul>
-            <li>Det finnes en W3Schools JavaScript Tutorial, men her anbefaler vi heller å følge kurset vårt på
-                Moodle.</li>
-            <li><a href="https://www.w3schools.com/jsref/default.asp" target="_new">W3Schools JavaScript
-                    Reference</a></li>
-        </ul>
+            Det viktigste vi skal lære er programmeringsspråket JavaScript. Vi skal lære grunnleggende programmering
+           ved å manipulere HTML- og CSS-kode på en nettside ved hjelp av JavaScript.
+       <li>Det finnes en W3Schools JavaScript Tutorial, men her anbefaler vi heller å følge kurset vårt på
+           Moodle.</li>
+       <li><a href="https://www.w3schools.com/jsref/default.asp" target="_new">W3Schools JavaScript
+               Reference</a><
+               /li>
     `;
 }
