@@ -11,13 +11,13 @@ body {
 }
 
 
-.kroppsDel {
-    display: flex; 
+.kropper {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.kropper {
+.kroppsDel {
     display: flex;
     flex-direction: row;
     align-items: center;

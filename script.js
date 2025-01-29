@@ -95,11 +95,9 @@ function showJavaScript() {
 function showKortspill() {
     blankAll();
     document.getElementById('Kortspill').innerHTML =/*html*/ `
-    <div class="kroppsDel">
-        <div id="head" class="kroppsDel"></div>
-        <div id="body" class="kroppsDel"></div>
-        <div id="legs" class="kroppsDel"></div>
-    </div>
+    <div id="head" class="kroppsDel"></div>
+    <div id="body" class="kroppsDel"></div>
+    <div id="legs" class="kroppsDel"></div>
 `;
     selectHead1();
     selectBody1();
@@ -108,11 +106,10 @@ function showKortspill() {
 
 function selectHead1() {
     document.getElementById('head').innerHTML = /*html*/ `
-    <div class="kropper">  
-        <button onclick="selectHead4()">◀</button>
+            <button onclick="selectHead4()">◀</button>
                     <img src="img/head1.png">
             <button onclick="selectHead3()">▶</button>
-    </div>`;
+    `;
 }
 
 function selectHead2() {
@@ -139,12 +136,10 @@ function selectHead4() {
 }
 function selectBody1() {
     document.getElementById('body').innerHTML = /*HTML*/`
-    <div class="kropper">
         <button onclick="selectBody4()">◀</button>
         <img src="img/body1.png" />
         <button onclick="selectBody2()">▶</button>
-    </div>
-`;
+    `;
 }
 
 function selectBody2() {
@@ -173,11 +168,10 @@ function selectBody4() {
 
 function selectLegs1() {
     document.getElementById('legs').innerHTML = /*HTML*/`
-    <div class="kropper">
         <button onclick="selectLegs4()">◀</button>
         <img src="img/legs1.png" />
         <button onclick="selectLegs2()">▶</button>
-    </div>`;
+    `;
 }
 
 function selectLegs2() {
