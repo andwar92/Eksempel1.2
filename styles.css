@@ -10,9 +10,17 @@ body {
     margin: 10px;
 }
 
+.button {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-.innerCard:empty {
-    display: none;
+.kroppsDel {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 .innerCard {
     padding: 10px;

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-        <button> Ingen layout</button>
+        <button onclick=""> Ingen layout</button>
         <button> Vertikal layout</button>
         <button> Horisontal layout</button>
         <button> Grid layout</button>
@@ -22,54 +22,32 @@
 
 <div class="card">
         <div class="header green" onclick="showTools()">Verktøy</div>
-            <div class="innerCard" id="Tools"></div>
+            <div id="Tools"></div>
     </div>
 
 
 <div class="card">
     <div class="header blue" onclick="showHtml()">HTML</div>
-        <div class="innerCard" id="Html"></div>
+        <div id="Html"></div>
 </div>
     
 
 <div class="card">
     <div class="header red" onclick="showCss()">CSS</div>
-        <div class="innerCard" id="Css"></div>
+        <div id="Css"></div>
 </div>
 
 
 
 <div class="card">
     <div class="header yellow" onclick="showJavaScript()">JavaScript</div>
-        <div class="innerCard" id="JS"></div>
+        <div id="JS"></div>
 </div>
 
 
 <div class="card">
-    <div class="header dark">Hode, kropp og ben</div>
-    <div class="button">
-        <div class="button">
-            <button>◀</button>
-            <img src="img/head1.png">
-            <button>▶</button>
-        </div>
-        <div  class="button">
-            <button>◀</button>
-            <img src="img/body1.png">
-            <button>▶</button>
-
-        </div> 
-        <div class="button">
-            <button>◀</button>
-            <img src="img/legs1.png">
-            <button>▶</button>
-
-        </div>
-        <div>
-            
-
-       </div>
-    </div>
+    <div class="header dark" onclick="showKortspill()">Hode, kropp og ben</div>
+    <div id="Kortspill" class="kroppsDel"> </div>
 </div>
 </body>
 
