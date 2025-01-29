@@ -1,16 +1,16 @@
-function blankAll(){
-    document.getElementById('Tools').innerHTML='';
-    document.getElementById('Html').innerHTML='';
-    document.getElementById('Css').innerHTML='';
-    document.getElementById('JS').innerHTML='';
-    document.getElementById('Kortspill').innerHTML='';
+function blankAll() {
+    document.getElementById('Tools').innerHTML = '';
+    document.getElementById('Html').innerHTML = '';
+    document.getElementById('Css').innerHTML = '';
+    document.getElementById('JS').innerHTML = '';
+    document.getElementById('Kortspill').innerHTML = '';
 }
 
 
 
-function showTools(){
+function showTools() {
     blankAll();
-document.getElementById('Tools').innerHTML=/*html*/`
+    document.getElementById('Tools').innerHTML =/*html*/`
 <div class="innerCard">
                 De to viktigste verktøyene vi skal bruke er disse:
                 <ul>
@@ -36,17 +36,17 @@ document.getElementById('Tools').innerHTML=/*html*/`
 }
 
 
-function showHtml(){
+function showHtml() {
     blankAll();
-    document.getElementById('Html').innerHTML=/*html*/`
+    document.getElementById('Html').innerHTML =/*html*/`
     <div class="innerCard"> 
        Vi bruker HTML til å definere et dokument.
         <ul>
             <li>Tagger for grunnleggende oppsett av en HTML-fil</li>
             <li>Tagger for grunnleggende formatering av tekst</li>
-            <li><tt>&lt;div&gt;</tt></li>
-            <li><tt>&lt;input type="text"&gt;</tt></li>
-            <li><tt>&lt;button&gt;</tt></li>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;input type="text"&gt;</Code></li>
+            <li><Code>&lt;button&gt;</Code></li>
             <li><a href="https://www.w3schools.com/html/default.asp" target="_new">W3Schools HTML Tutorial</a>
             </li>
             <li><a href="https://www.w3schools.com/tags/default.asp" target="_new">W3Schools HTML Reference</a>
@@ -56,32 +56,30 @@ function showHtml(){
       `;
 }
 
-function showCss(){
+function showCss() {
     blankAll();
-    document.getElementById('Css').innerHTML=/*html*/`
+    document.getElementById('Css').innerHTML =/*html*/`
     <div class="innerCard">
          Vi bruker CSS til å <i>style</i> et dokument, altså farger, fonter, utseende og lignende.
         <ul>
-            <li><tt>background-color</tt></li>
-            <li><tt>color</tt></li>
-            <li><tt>padding</tt></li>
-            <li><tt>margin</tt></li>
-            <li><tt>border</tt></li>
-            <li><tt>text-align</tt></li>
-            <li><tt>font-size</tt></li>
+            <li><Code>background-color</Code></li>
+            <li><Code>color</Code></li>
+            <li><Code>padding</Code></li>
+            <li><Code>margin</Code></li>
+            <li><Code>border</Code></li>
+            <li><Code>text-align</Code></li>
+            <li><Code>font-size</Code></li>
             <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_new">Flexbox</a></li>
             <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_new">Grid</a></li>
-            <li><a href="https://www.w3schools.com/css/default.asp" target="_new">W3Schools CSS Tutorial</a>
-            </li>
-            <li><a href="https://www.w3schools.com/cssref/default.asp" target="_new">W3Schools CSS Reference</a>
-            </li>
+            <li><a href="https://www.w3schools.com/css/default.asp" target="_new">W3Schools CSS Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/cssref/default.asp" target="_new">W3Schools CSS Reference</a></li>
         </ul>
     </div> 
     `;
 }
-function showJavaScript(){
+function showJavaScript() {
     blankAll();
-    document.getElementById('JS').innerHTML=/*html*/`
+    document.getElementById('JS').innerHTML =/*html*/`
     <div class="innerCard"> 
         <ul>
             Det viktigste vi skal lære er programmeringsspråket JavaScript. Vi skal lære grunnleggende programmering
@@ -89,30 +87,32 @@ function showJavaScript(){
        <li>Det finnes en W3Schools JavaScript Tutorial, men her anbefaler vi heller å følge kurset vårt på
            Moodle.</li>
        <li><a href="https://www.w3schools.com/jsref/default.asp" target="_new">W3Schools JavaScript
-               Reference</a><
-               /li>
+               Reference</a></li>
     </div>
     `;
 }
 
-function showKortspill(){
+function showKortspill() {
     blankAll();
-    document.getElementById('Kortspill').innerHTML=/*html*/ `
-    <div id="head" class="kroppsDel"></div>
-    <div id="body" class="kroppsDel"></div>
-    <div id="legs" class="kroppsDel"></div>
+    document.getElementById('Kortspill').innerHTML =/*html*/ `
+    <div class="kroppsDel">
+        <div id="head" class="kroppsDel"></div>
+        <div id="body" class="kroppsDel"></div>
+        <div id="legs" class="kroppsDel"></div>
+    </div>
 `;
-selectHead1();
-selectBody1();
-selectLegs1();
+    selectHead1();
+    selectBody1();
+    selectLegs1();
 }
 
-function selectHead1(){
-    document.getElementById('head').innerHTML= /*html*/ `
-            <button onclick="selectHead4()">◀</button>
+function selectHead1() {
+    document.getElementById('head').innerHTML = /*html*/ `
+    <div class="kropper">  
+        <button onclick="selectHead4()">◀</button>
                     <img src="img/head1.png">
             <button onclick="selectHead3()">▶</button>
-    `
+    </div>`;
 }
 
 function selectHead2() {
@@ -139,10 +139,12 @@ function selectHead4() {
 }
 function selectBody1() {
     document.getElementById('body').innerHTML = /*HTML*/`
+    <div class="kropper">
         <button onclick="selectBody4()">◀</button>
         <img src="img/body1.png" />
         <button onclick="selectBody2()">▶</button>
-    `;
+    </div>
+`;
 }
 
 function selectBody2() {
@@ -171,10 +173,11 @@ function selectBody4() {
 
 function selectLegs1() {
     document.getElementById('legs').innerHTML = /*HTML*/`
+    <div class="kropper">
         <button onclick="selectLegs4()">◀</button>
         <img src="img/legs1.png" />
         <button onclick="selectLegs2()">▶</button>
-    `;
+    </div>`;
 }
 
 function selectLegs2() {
