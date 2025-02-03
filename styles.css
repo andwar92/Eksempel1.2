@@ -2,7 +2,6 @@ body {
     margin-left: 20px;
 }
 
-
 .card {
     width: 500px;
     background-color: rgb(224, 219, 219);
@@ -56,4 +55,25 @@ body {
 
 .dark {
     background-color: rgb(34, 33, 33);
+}
+
+p {
+    padding-left: 10px;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 520px);
+    width: auto;
 }

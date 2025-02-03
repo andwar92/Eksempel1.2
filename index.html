@@ -11,17 +11,17 @@
 
 <body>
     <div>
-        <button onclick="Ingenlayout()"> Ingen layout</button>
-        <button onclick="Verticalayout()"> Vertikal layout</button>
-        <button onclick="Horisontallayout()"> Horisontal layout</button>
-        <button onclick="Gridlayout()"> Grid layout</button>
+        <button onclick="noLayout()"> Ingen Layout</button>
+        <button onclick="verticalLayout()"> Vertikal Layout</button>
+        <button onclick="horizontalLayout()"> Horisontal Layout</button>
+        <button onclick="gridLayout()"> Grid Layout</button>
     </div>
 
     <div>
         <h1>Eksempel 1</h1>
     </div>
 
-
+<div id="cards">
     <div class="card">
         <div class="header green" onclick="showTools()">Verktøy</div>
         <div id="Tools"></div>
@@ -51,6 +51,7 @@
         <div class="header dark" onclick="showKortspill()">Hode, kropp og ben</div>
         <div id="Kortspill" class="kropper"> </div>
     </div>
+</div>
 </body>
 
 </html>

@@ -1,9 +1,17 @@
-function blankAll() {
-    document.getElementById('Tools').innerHTML = '';
-    document.getElementById('Html').innerHTML = '';
-    document.getElementById('Css').innerHTML = '';
-    document.getElementById('JS').innerHTML = '';
-    document.getElementById('Kortspill').innerHTML = '';
+function noLayout(){
+    document.getElementById('cards').classList.value ='';
+}
+function horizontalLayout() {
+    noLayout();
+    document.getElementById('cards').classList.add('horizontal');
+}
+function verticalLayout() {
+    noLayout();
+    document.getElementById('cards').classList.add('vertical');
+}
+function gridLayout() {
+    noLayout();
+    document.getElementById('cards').classList.add('grid');
 }
 
 
@@ -196,5 +204,12 @@ function selectLegs4() {
         <img src="img/legs4.png" />
         <button onclick="selectLegs1()">▶</button>
     `;
+}
+function blankAll() {
+    document.getElementById('Tools').innerHTML = '';
+    document.getElementById('Html').innerHTML = '';
+    document.getElementById('Css').innerHTML = '';
+    document.getElementById('JS').innerHTML = '';
+    document.getElementById('Kortspill').innerHTML = '';
 }
 
